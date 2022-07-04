@@ -8,8 +8,14 @@
 
 # Getting Started
 
-### Generate and build the project
+### Generate and build the project using the scripts
 ```bash
 > scripts/gen
 > scripts/build
+```
+
+### Generate and build using pure cmake
+```bash
+> cmake . -B.build
+> cmake --build .build/
 ```
