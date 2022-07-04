@@ -1,5 +1,15 @@
-[![Build](https://github.com/Husenap/cmake-project-template/actions/workflows/build.yml/badge.svg)](https://github.com/Husenap/cmake-project-template/actions/workflows/build.yml)
+[![build](https://github.com/Husenap/JK-1/actions/workflows/build.yml/badge.svg)](https://github.com/Husenap/JK-1/actions/workflows/build.yml)
 
-# cmake-project-template
+# JK-1
 
-Basic C++ project template using CMake.
+## An experimental VST Plugin
+
+
+
+# Getting Started
+
+### Generate and build the project
+```bash
+> scripts/gen
+> scripts/build
+```
