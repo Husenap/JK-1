@@ -19,3 +19,6 @@
 > cmake . -B.build
 > cmake --build .build/
 ```
+
+### The VST file will end up in the output folder
+`.build/VST3/Debug/JK-1.vst3/Contents/x86_64-win/JK-1.vst3`

@@ -22,7 +22,3 @@ jobs:
     - name: Build
       shell: bash
       run: scripts/build
-
-    - name: Test
-      shell: bash
-      run: scripts/test

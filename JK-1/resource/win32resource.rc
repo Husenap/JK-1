@@ -1,21 +1,14 @@
-// Microsoft Visual C++ generated resource script.
-//
-#include "resource.h"
-/////////////////////////////////////////////////////////////////////////////
-// English (United Kingdom) resources
+#include <windows.h>
+#include "../source/version.h"
 
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
-#pragma code_page(1252)
+#define APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-//
 // Version
-//
-
+/////////////////////////////////////////////////////////////////////////////
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,0
- PRODUCTVERSION 1,0,0,0
+ FILEVERSION MAJOR_VERSION_INT,SUB_VERSION_INT,RELEASE_NUMBER_INT,BUILD_NUMBER_INT
+ PRODUCTVERSION MAJOR_VERSION_INT,SUB_VERSION_INT,RELEASE_NUMBER_INT,BUILD_NUMBER_INT
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -30,15 +23,18 @@ BEGIN
     BEGIN
         BLOCK "040004e4"
         BEGIN
-            VALUE "CompanyName", "My Plug-in Company"
-            VALUE "FileDescription", "JK-1 VST3"
-            VALUE "FileVersion", "1.0.0.0"
-            VALUE "InternalName", "JK-1 VST3"
-            VALUE "LegalCopyright", "Copyright(c) 2022 My Plug-in Company."
-            VALUE "LegalTrademarks", "VST is a trademark of Steinberg Media Technologies GmbH"
-            VALUE "OriginalFilename", "JK-1.vst4"
-            VALUE "ProductName", "JK-1 VST3"
-            VALUE "ProductVersion", "1.0.0.0"
+            VALUE "FileVersion",      FULL_VERSION_STR"\0"
+            VALUE "ProductVersion",   FULL_VERSION_STR"\0"
+            VALUE "OriginalFilename", stringOriginalFilename"\0"
+            VALUE "FileDescription",  stringFileDescription"\0"
+            VALUE "InternalName",     stringFileDescription"\0"
+            VALUE "ProductName",      stringFileDescription"\0"
+            VALUE "CompanyName",      stringCompanyName"\0"
+            VALUE "LegalCopyright",   stringLegalCopyright"\0"
+            VALUE "LegalTrademarks",  stringLegalTrademarks"\0"
+            //VALUE "PrivateBuild",     " \0"
+            //VALUE "SpecialBuild",     " \0"
+            //VALUE "Comments",         " \0"
         END
     END
     BLOCK "VarFileInfo"
@@ -46,44 +42,3 @@ BEGIN
         VALUE "Translation", 0x400, 1252
     END
 END
-
-
-#ifdef APSTUDIO_INVOKED
-/////////////////////////////////////////////////////////////////////////////
-//
-// TEXTINCLUDE
-//
-
-1 TEXTINCLUDE 
-BEGIN
-    "resource.h\0"
-END
-
-2 TEXTINCLUDE 
-BEGIN
-    "\0"
-END
-
-3 TEXTINCLUDE 
-BEGIN
-    "\r\n"
-    "\0"
-END
-
-#endif    // APSTUDIO_INVOKED
-
-#endif    // English (United Kingdom) resources
-/////////////////////////////////////////////////////////////////////////////
-
-
-
-#ifndef APSTUDIO_INVOKED
-/////////////////////////////////////////////////////////////////////////////
-//
-// Generated from the TEXTINCLUDE 3 resource.
-//
-
-
-/////////////////////////////////////////////////////////////////////////////
-#endif    // not APSTUDIO_INVOKED
-
